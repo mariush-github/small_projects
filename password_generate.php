@@ -45,7 +45,7 @@ for ($i=0;$i<4;$i++) {
 	echo "character set $i, count=$count \n";
 	if ($count > ($password_length-$chars_assigned)) $count = $password_length-$chars_assigned;
 	// if last character set, force to use the maximum unused
-	if ($i==4) $count = $password_length-$chars_assigned;
+	if ($i==3) $count = $password_length-$chars_assigned;
 	for ($j=0;$j<$count;$j++) {
 		$pos = get_empty_char_position();
 		echo "charset $i, char $j, at position $pos\n";
