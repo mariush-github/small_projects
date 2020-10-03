@@ -11,10 +11,10 @@ $limits = [
 [1,64], // lowercase , max should be set to max password length
 ];
 
-$characters = array();
+$characters = [];
 // build the character tables:
 // special chars: !"#$%&'():;<=>?@
-$characters[0] = array(); 
+$characters[0] = []; 
 for ($i=0x21;$i<=0x29;$i++) array_push($characters[0],chr($i)); // !"#$%&'()
 for ($i=0x3A;$i<=0x40;$i++) array_push($characters[0],chr($i)); // :;<=>?@
 // numbers: 0..9
