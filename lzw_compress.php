@@ -1,5 +1,10 @@
 <?php
 
+// Very basic and unoptimized LZW compressor written in PHP, generates a valid .Z file (as the ones created by the compress utility in Linux) 
+// File paths are hardcoded, it takes input.txt and produces output.txt.z (in same folder where the script is located)
+//
+// The output file can be opened and decompressed by 7-zip in Windows.
+
 // reset dictionary every time it's full
 $option_reset_when_full = false;
 
